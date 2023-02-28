@@ -61,7 +61,7 @@ function App() {
               <ErrorMessage errors={errors} name="email" as="p"/>
             </Grid>
             <Grid item xs={12} sm={8}>
-              <TextField {...register("password",{ required: "This is a mandatory field" })} type="password" label="Password" placeholder='Please enter your password' variant="outlined" fullWidth />
+              <TextField {...register("password",{ required: "This is a mandatory field", minLength:{value: 8, message:"Minimum character length is 8"}})} type="password" label="Password" placeholder='Please enter your password' variant="outlined" fullWidth />
               <ErrorMessage errors={errors} name="password" as="p"/>
             </Grid>
             
