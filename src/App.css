@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url('registration.png');
+  color: black;
 }
 
 .App-logo {
@@ -11,6 +13,15 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+p {
+  color: #bf1650;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
 }
 
 .App-header {
